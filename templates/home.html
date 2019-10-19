@@ -4,12 +4,38 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-{% if user.is_authenticated %}
-  Hi {{ user.username }}!
-  <p><a href="{% url 'logout' %}">logout</a></p>
-{% else %}
-  <p>You are not logged in</p>
-  <a href="{% url 'login' %}">login</a> |
-  <a href="{% url 'signup' %}">signup</a>
-{% endif %}
+<section class="intro">
+  <div class="row">
+    <div class="col-md-11">
+        <div class="col-md-4 pull-right login-card">
+          <form method="POST" action="{% url 'login' %}">
+            {% csrf_token %}
+            <div class="col-md-12">
+                <h1 class="logo">Music Time</h1>
+            </div>
+            <div class="col-md-12">
+              <label class="input-label">Username<span>*</span></label>
+                <input type="text" class="login-input" placeholder="Username..." name="username" required/>
+            </div>
+
+            <div class="col-md-12">
+                <label class="input-label">Password<span>*</span></label>
+                <input type="password" class="login-input" placeholder="Password..." name="password" required/>
+            </div>
+            <div class="col-md-12">
+                <label class="input-label">Forgot password? <a href="#">click here</a></label>
+            </div>
+            <div class="col-md-12">
+              <button type="submit" class="btn-login">Log In</button>
+            </div>
+          </form>
+        </div>
+    </div>
+  </div>
+</section>
+<section class="why">
+
+
+</section>
+
 {% endblock %}

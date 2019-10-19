@@ -1,0 +1,80 @@
+
+.intro {
+    background: url("images/matt-botsford-OKLqGsCT8qs-unsplash(1).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.login-card{
+    background-color: rgba(0, 0,0,0.2);
+    margin: 100px 0px;
+}
+.logo {
+    text-align: center;
+    color: #ffffff;
+}
+.login-input {
+    width: 100%;
+    border: 1px solid #880e4f;
+    border-radius: 50px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: 14px;
+    height: 40px;
+    padding: 15px;
+}
+.input-label {
+    color: hsl(0, 0%, 100%);
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+.input-label>span {
+    color: #8b1313;
+}
+.input-label>a {
+    color: #f48fb1 !important;
+}
+.btn-login {
+    width: 100%;
+    border-radius: 50px;
+    background-color: #290619;
+    color: #ffffff;
+    padding: 10px;
+    margin: 20px 0px;
+    border: none;
+    font-weight: bold;
+}
+.container-fluid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+.navbar > .container-fluid .navbar-brand {
+    margin-left: 0px !important;
+}
+.navbar-inverse {
+    background-color: #55134c !important;
+    border : none !important;
+}
+.navbar {
+    border-radius: 0px !important;
+    margin-bottom: 0px !important;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff !important;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #e0e0e0 !important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.navbar-inverse .navbar-brand {
+    color: #ffffff !important;
+}
+.navbar-inverse .navbar-brand :hover {
+    color: #e0e0e0 !important;
+}

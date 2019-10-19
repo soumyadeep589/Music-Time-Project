@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-from . import secret
 from dotenv import load_dotenv
 from os.path import join, dirname
 
@@ -29,9 +28,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+
+APPEND_SLASH = False
 
 
 # Application definition
@@ -75,6 +76,12 @@ TEMPLATES = [
         },
     },
 ]
+
+# STATICFILES_DIRS = (
+#      os.path.join(BASE_DIR, 'musictimeapp/static'),
+# )
+
+# STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'musictimeapp/static')
 
 WSGI_APPLICATION = 'musictime.wsgi.application'
 
